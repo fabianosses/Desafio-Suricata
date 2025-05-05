@@ -5,199 +5,193 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
-    <title>Suricata</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Desafio-Suricata</title>
 </head>
 <body>
 
     <!--header-->
-    <header class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="border mt-5"></div>
-            </div>
-        </div>
-
-    <!-- Navbar  -->
-        <nav class="navbar navbar-dark fixed-top" style="background-color: #E83E8C">
+    <header class="row col-md-4 col-sm-6 mb-4">
+        <!-- Navbar  -->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top justify-content-between">
             <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="assets/img/logo.png" width="132px" height="53px"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-                <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                <div class="col-4 text-center">
+                    <a class="navbar-brand" href="#"><img src="assets/img/logo.png" alt=""></a>
                 </div>
-                <div class="offcanvas-body">
-                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                    <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-dark">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li>
-                        <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                    </li>
-                </ul>
-                <form class="d-flex mt-3" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-success" type="submit">Search</button>
-                </form>
+                <div class="col-4 text-center">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
             </div>
         </nav>
     </header>   
 
     <!--contenedor-->
-    <div class="container mt-5">
-        <h2 class="mb-4 text-center">Mis tarjetas</h2>  
-    </div>
+    <section class="container mt-5">
+        <h2 class="mb-4 text-center">Nuestros Productos</h2>  
+    </section>
 
-    <!-- Grillas-->
-    <div class="container text-center">
-        <div class="row row-cols-3">
+    <!-- Grillas-1-al-6-->
+    <section class="containergrid; row g-5">
 
-            <!--Grilla-1-->
-            <div class="col">Grilla1
+        <!--Grilla-1-->
+        <div class="col-md-4">
 
-                <!--card-1-Colaciones-->
-                <div class="card" style="width: 18rem;">
-                    <img src="assets/img/colaciones.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Colaciones</h5>
-                        <p class="card-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-                    </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Morbi leo risus</li>
-                            <li class="list-group-item">Porta ac consectetur ac</li>
-                        </ul>
-                    <div class="card-body">
-                        <a href="#" class="card-link">Ver más</a>
-                        <a href="#" class="card-link">Comprar</a>
-                    </div>
+            <!--card-1-colaciones-->
+            <div class="card">
+                <img src="assets/img/colaciones.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Colaciones</h5>
+                    <p class="card-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
                 </div>
-            </div>
-
-            <!--Grilla2-->
-            <div class="col">Grilla2
-
-                <!--card-2-Desayunos-->
-                <div class="card" style="width: 18rem;">
-                    <img src="assets/img/desayunos.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Desayunos</h5>
-                        <p class="card-text">Iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-                    </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Morbi leo risus</li>
-                            <li class="list-group-item">Porta ac consectetur ac</li>
-                        </ul>
-                    <div class="card-body">
-                        <a href="#" class="card-link">Ver más</a>
-                        <a href="#" class="card-link">Comprar</a>
-                    </div>
-                </div>
-            </div>
-                
-            <!--Grilla3-->
-            <div class="col">Grilla3
-
-                <!--card-3-Bebidas-->
-                <div class="card" style="width: 18rem;">
-                    <img src="assets/img/bebidas.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                            <h5 class="card-title">Bebidas</h5>
-                            <p class="card-text">Doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-                    </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Morbi leo risus</li>
-                            <li class="list-group-item">Porta ac consectetur ac</li>
-                        </ul>
-                    <div class="card-body">
-                        <a href="#" class="card-link">Ver más</a>
-                        <a href="#" class="card-link">Comprar</a>
-                    </div>
-                </div>
-            </div>
-
-            <!--Grilla4-->
-            <div class="col">Grilla4
-
-                <!--card-4-verduras-->
-                <div class="card" style="width: 18rem;">
-                    <img src="assets/img/verduras.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Verduras</h5>
-                        <p class="card-text">Ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-                    </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Morbi leo risus</li>
-                            <li class="list-group-item">Porta ac consectetur ac</li>
-                        </ul>
-                    <div class="card-body">
-                        <a href="#" class="card-link">Ver más</a>
-                        <a href="#" class="card-link">Comprar</a>
-                    </div>
-                </div>
-            </div>
-
-            <!--Grilla5-->
-            <div class="col">Grilla5
-
-                <!--card-5-dulces-->
-                <div class="card" style="width: 18rem;">
-                    <img src="assets/img/dulces.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Dulces</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Morbi leo risus</li>
-                            <li class="list-group-item">Porta ac consectetur ac</li>
-                        </ul>
-                    <div class="card-body">
-                        <a href="#" class="card-link">Ver más</a>
-                        <a href="#" class="card-link">Comprar</a>
-                    </div>
-                </div>
-            </div>
-
-            <!--Grill6-->
-            <div class="col">Grilla6
-
-                <!--card-6-Empanadas-->
-                <div class="card" style="width: 18rem;">
-                    <img src="assets/img/empanadas.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Empanadas</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Morbi leo risus</li>
-                            <li class="list-group-item">Porta ac consectetur ac</li>
-                        </ul>
-                    <div class="card-body">
-                        <a href="#" class="card-link">Ver más</a>
-                        <a href="#" class="card-link">Comprar</a>
-                    </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Morbi leo risus</li>
+                    <li class="list-group-item">Porta ac consectetur ac</li>
+                </ul>
+                <div class="footcard">
+                    <a href="#" class="card-link">Ver más</a>
+                    <a href="#" class="card-link">Comprar</a>
                 </div>
             </div>
         </div>
-    </div>
-        
+
+        <!--Grilla2-->
+        <div class="col-md-4">
+
+            <!--card-2-Desayunos-->
+            <div class="card">
+                <img src="assets/img/desayunos.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Desayunos</h5>
+                    <p class="card-text">Iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Morbi leo risus</li>
+                        <li class="list-group-item">Porta ac consectetur ac</li>
+                    </ul>
+                    <div class="footcard">
+                        <a href="#" class="card-link">Ver más</a>
+                        <a href="#" class="card-link">Comprar</a>
+                    </div>
+            </div>
+        </div>
+            
+        <!--Grilla3-->
+        <div class="col-md-4">
+
+            <!--card-3-Bebidas-->
+            <div class="card">
+                <img src="assets/img/bebidas.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                        <h5 class="card-title">Bebidas</h5>
+                        <p class="card-text">Doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Morbi leo risus</li>
+                        <li class="list-group-item">Porta ac consectetur ac</li>
+                    </ul>
+                    <div class="footcard">
+                        <a href="#" class="card-link">Ver más</a>
+                        <a href="#" class="card-link">Comprar</a>
+                    </div>
+            </div>
+        </div>
+
+        <!--Grilla-4-al-6-->
+
+        <!--Grilla4-->
+        <div class="col-md-4">
+
+            <!--card-4-verduras-->
+            <div class="card">
+                <img src="assets/img/verduras.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Verduras</h5>
+                    <p class="card-text">Ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Morbi leo risus</li>
+                        <li class="list-group-item">Porta ac consectetur ac</li>
+                    </ul>
+                    <div class="footcard">
+                        <a href="#" class="card-link">Ver más</a>
+                        <a href="#" class="card-link">Comprar</a>
+                    </div>
+            </div>
+        </div>
+
+        <!--Grilla5-->
+        <div class="col-md-4">
+
+            <!--card-5-dulces-->
+            <div class="card">
+                <img src="assets/img/dulces.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Dulces</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Morbi leo risus</li>
+                        <li class="list-group-item">Porta ac consectetur ac</li>
+                    </ul>
+                    <div class="footcard">
+                        <a href="#" class="card-link">Ver más</a>
+                        <a href="#" class="card-link">Comprar</a>
+                    </div>
+            </div>
+        </div>
+
+        <!--Grill6-->
+        <div class="col-md-4">
+
+            <!--card-6-Empanadas-->
+            <div class="card">
+                <img src="assets/img/empanadas.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Empanadas</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Morbi leo risus</li>
+                        <li class="list-group-item">Porta ac consectetur ac</li>
+                    </ul>
+                <div class="footcard">
+                    <a href="#" class="card-link">Ver más</a>
+                    <a href="#" class="card-link">Comprar</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="text-center">
+            <div class="footer1 row">
+                <div class="col-sm-6 ">
+                    Ahora aceptamos
+                </div>
+                <div class="col-sm-6">
+                Column
+                </div>
+                <div class="footer2 col-sm-12">
+                    <img src="assets/img/logo-footer.png" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>
